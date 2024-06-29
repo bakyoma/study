@@ -1,6 +1,7 @@
 <pre>
 p 문단
-pre 문장
+br 엔터
+pre 문장 (이미지만 넣고 싶을땐 사용 안함) *잘 쓰지 않음..!
 div 그룹
 nav 그룹인데 header 에 많이 사용 (네이베이션 : 대표 목차, 소 목차)
 inp 기본 틀이 정해진 데이터를 주거니 받거니 하는것 (날자창, 검색 버튼, 확인버튼 등)
@@ -12,3 +13,4 @@ footer 홈페이지 제일 하단 (화사 주소 및 대표자 설명)
 select "option"을 사용하기 위한 박스
 a : <a href="파일주소">이름 링크 생성완료
 </pre>
+reset.css 적용 <link rel="stylesheet" href="./reset.css">
