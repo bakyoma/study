@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <title></title>
+</head>
+<style>
+    body {
+    margin: 0; 
+    padding: 0;
+}
+
+.loader {
+    position:fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(0%, 0%); 
+    width:50%; 
+    height: 50%; 
+    background: #000;
+}
+
+.loader .inner {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    height:80px; 
+    text-align: center;
+}
+
+.loader h1 {
+    height: 160px;
+    margin: 0; 
+    padding: 0; 
+    font-size: 50px; 
+    color: rgba(255, 255, 255, 0.2); 
+    background-size: 101% 100%; 
+    background-position: left 0px bottom -40px;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 90 240 300' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='800' style='stroke: none; fill: rgb(255,255,255);' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none;'%3E%3C/path%3E%3C/svg%3E");
+    animation: wave 3s both linear
+}
+
+@keyframes wave {
+    0% {
+        background-position: left 0px bottom -80px;
+    }
+    100% { 
+        background-position: left 1500px bottom 20px;
+    }
+}
+</style>
+
+<body>
+    <div>
+        <p style="background-image: url(../img/rainy_day.jpg); background-size: width: 100% height: 50px;; background-position: center center; background-repeat: no-repeat;"></p>
+    </div>
+    <!-- 위에꺼는 왜 이미지가 안나오는 거죠..? -->
+    <!-- 참고 https://ofcourse.kr/css-course/background-%EC%86%8D%EC%84%B1 -->
+     <div style="width: 100%; height: 500px; margin-bottom: 15px; background-image: url(../img/rainy_day.jpg); border: 1px solid;"></div>
+     <div>
+        <p style="background-color: azure;">집에 있는 손님용 침대와 아기 침대를 패기처분 했어요</p>
+        <p style="font-size: larger;"><input type="date" value="2024-07-17"></p>
+        <p><input type="submit" value="submit"></p>
+        <!-- 참고 https://www.codingfactory.net/11585 -->
+     </div>
+     <div>
+        <p >조금씩 짐을 정리하면서 감정도 생각도 정리 하고 있는거 같아요</p>
+     </div>
+     <div class="loader">
+        <div class="inner">
+           <h1> 조금씩 </h1>
+       </div>
+   </div>
+   <!-- 참고 https://do-dam.tistory.com/145 음 역시 하나도 모르게꾼... -->
+    <div>
+        <p style=" color: aliceblue; background-color: #000; ">심규선 노래 추천해 드려요 야래향</p>
+        <p style="font-size: xx-large;">요즘 듣고 있는 노래에요</p>
+        <p style="background-color: yellowgreen; width: 50px;height: 100px;">듣다 운적도 있어요 ㅎㅎ</p>
+    </div>
+</body>
+</html>
